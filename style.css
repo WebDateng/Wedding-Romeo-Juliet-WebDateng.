@@ -1,0 +1,340 @@
+:root {
+  --mainFont: Kaushan Script;
+  --secondaryFont: opensans, sans-serif;
+  --white: rgb(247, 239, 239);
+  --acsentColor: #eda006;
+  --mainColor: #271609;
+}
+
+/* JUMBOTRON */
+.jumbotron {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #242424;
+  z-index: -1;
+}
+/* END JUMBOTRON */
+
+/* FONTS */
+h1 {
+  font-family: var(--mainFont);
+  font-weight: 600;
+  font-size: 120px;
+  color: var(--white);
+}
+
+h2 {
+  font-family: var(--mainFont);
+  font-weight: 600;
+  font-size: 60px;
+  color: var(--white);
+}
+
+p {
+  font-family: var(--secondaryFont);
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: var(--white);
+}
+
+h3 {
+  font-family: var(--mainFont);
+  font-weight: 600;
+  font-size: 26px;
+  letter-spacing: 2px;
+  color: var(--acsentColor);
+}
+
+h4 {
+  font-family: var(--mainFont);
+  color: var(--white);
+  font-size: 50px;
+}
+
+span {
+  color: var(--acsentColor);
+}
+/* END FONTS */
+
+/* UKIRAN */
+.ukiran img {
+  width: 400px;
+  opacity: 0.7;
+}
+
+.ukiran2 img {
+  width: 300px;
+  opacity: 0.7;
+  margin: 10px;
+}
+/* END UKIRAN */
+
+/* TGL BANNER */
+.wedding p {
+  font-family: var(--secondaryFont);
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: var(--white);
+  border-top: 2px solid var(--white);
+  border-bottom: 2px solid var(--white);
+  margin-right: auto;
+}
+
+.wedding {
+  margin-top: 200px !important;
+}
+/* END TGL BANNER */
+
+/* TOMBOL MUSIK */
+.btn-music {
+  border: 2px solid #2b2b2b !important;
+  border: none;
+  background-color: var(--acsentColor);
+  padding: 15px !important;
+  border-radius: 50px;
+  outline: none;
+  position: fixed;
+  right: 15px;
+  bottom: 10px;
+  z-index: 9;
+}
+
+.btn:hover {
+  color: var(--white);
+  background-color: #2b2b2b;
+}
+/* END TOMBOL MUSIK */
+
+/* PROFIL PENGANTIN */
+#profil {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-top: 250px;
+  background-color: var(--mainColor);
+}
+.foto-memplai img {
+  width: 300px;
+  margin-top: 100px;
+  border: 5px solid var(--acsentColor);
+  border-radius: 20px;
+}
+
+.love img {
+  width: 80px;
+}
+/* END PROFIL PENGANTIN */
+
+/* ACARA */
+.acara {
+  margin-top: 60px;
+}
+
+/* MAPS */
+.maps {
+  width: 100%;
+  height: 400px;
+}
+
+.btn-maps {
+  width: 100%;
+  color: var(--white);
+  font-family: var(--secondaryFont);
+  letter-spacing: 3px;
+  font-size: 18px;
+  background-color: var(--acsentColor);
+  padding: 10px;
+  border: none;
+}
+
+.btn-maps img {
+  width: 20px;
+  margin-right: 20px;
+}
+/* END MAPS */
+
+/* PROTOKOL */
+.protokol {
+  margin-top: 80px;
+}
+
+.btn-prokes {
+  letter-spacing: 3px;
+  padding: 5px 10px;
+}
+
+.btn-prokes img {
+  width: 18px;
+}
+/* END PROTOKOL */
+
+/* TANGGAL */
+#date {
+  margin-top: -50px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  background-image: url(img/cincin.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.date {
+  font-size: 46px;
+  color: var(--white);
+}
+
+.btn-calender img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.btn-calender {
+  border: none;
+  padding: 15px 30px;
+  background-color: var(--acsentColor);
+  color: var(--white);
+  font-family: var(--secondaryFont);
+  letter-spacing: 3px;
+}
+/* END TANGGAL */
+
+/* END ACARA */
+
+/* GALLERY */
+#galleri {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: var(--white);
+}
+
+.head-gallery h3 {
+  font-size: 60px;
+  text-shadow: 2px 4px 1px #0000002c;
+}
+
+.foto img {
+  margin: 20px;
+  width: 100%;
+}
+
+.modal-body img {
+  width: 100%;
+}
+/* END GALLERY */
+
+/* REVEAL */
+.revealtop {
+  position: relative;
+  opacity: 0;
+  transition: all 1.5s ease-out;
+  transform: translateY(150px);
+}
+.revealtop.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+/* END REVEAL */
+
+/* FOOTER */
+footer {
+  padding: 100px 20px;
+  background-color: #5f9ea0;
+}
+
+footer svg {
+  color: red;
+}
+
+/* ikon */
+footer img {
+  margin: 12px 10px 0;
+}
+/* END FOOTER */
+
+/* UNDER SCREEN => 768 PX */
+@media (max-width: 768px) {
+  /* FONTS */
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .wedding p {
+    font-size: 13px;
+  }
+
+  /* UKIRAN */
+  .ukiran img {
+    width: 250px;
+  }
+
+  .ukiran2 img {
+    width: 150px;
+  }
+  /* WEDDING */
+  .wedding {
+    margin-top: 200px !important;
+  }
+
+  /* FOTO MEMPLAI */
+  .foto-memplai img {
+    width: 200px;
+  }
+
+  /* LOVE */
+  .love img {
+    margin-top: 50px;
+  }
+
+  /* TOMBOL MUSIK */
+  .btn-music {
+    height: 45px;
+    padding: 10px !important;
+  }
+  .btn-music img {
+    width: 20px;
+    margin-bottom: 7px;
+  }
+
+  /* TOMBOL PROKES */
+  .protokol {
+    justify-content: center;
+  }
+  .btn-prokes {
+    font-size: 13px;
+  }
+
+  /* BTN KALENDER */
+  .btn-calender {
+    font-size: 13px;
+  }
+
+  /* GALLERY */
+  .head-gallery h3 {
+    font-size: 40px;
+  }
+
+  /* FOOTER */
+  footer h2 {
+    font-size: 40px;
+  }
+  footer p {
+    font-size: 13px;
+  }
+}
